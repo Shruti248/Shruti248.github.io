@@ -101,7 +101,28 @@ export default function Home() {
         </a>
       </div>
 
-      
+      <div className="flex mt-10 mx-auto items-center justify-center gap-4">
+        <a href="https://www.linkedin.com/in/shruti-unadkat-3013ab203/" className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+          <img src="/assets/linkedin.svg" alt="linkedin" />
+        </a>
+        <a href={`mailto:${mail}`} className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+          <img src="/assets/mailicon.svg" alt="mail" />
+        </a>
+        <a href="https://www.linkedin.com/in/shruti-unadkat-3013ab203/" className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+          <img src="/assets/pdf.svg" alt="resume" />
+        </a>
+      </div>
+
+      {/* footer */}
+      <div className="flex items-center justify-between gap-2 mt-40 py-20">
+        <img src="/sign.png" alt="Shruti" className="h-20 block" />
+
+        <p>© {new Date().getFullYear().toString()}, All rights reserved</p>
+
+        <img src="/cat2.png" alt="Shruti" className="w-20 block" />
+        
+      </div>
+      {/* footer */}
 
     </div>
   );
