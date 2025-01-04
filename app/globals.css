@@ -4,6 +4,7 @@
 
 :root {
   --bg-color: #FAFAFA;
+  --text-color: #383838;
 }
 
 /* styles/globals.css */
@@ -30,5 +31,6 @@
 
 body {
   background-color: var(--bg-color);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  font-family: Mukta, sans-serif;
 }

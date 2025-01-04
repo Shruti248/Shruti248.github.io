@@ -24,6 +24,20 @@ export default function Home() {
       </div>
       {/* navbbar */}
 
+      {/* hero */}
+      <div className="px-4 md:px-10 mt-36">
+        <img src="/hero-logo.svg" alt="Shruti" className="w-96 block" />
+
+        <div className="flex items-center text-2xl gap-4 px-4 mt-6">
+          <p>[Sh-ru-ti]</p>
+          <img src="/assets/heart.svg" alt="heart icon" />
+          <p>श्रुति</p>
+        </div>
+      </div>
+      {/* hero */}
+
+
+      
     </div>
   );
 }
