@@ -37,6 +37,15 @@ export default function Home() {
       {/* hero */}
 
 
+      {/* about */}
+      <div className="px-4 md:px-10 mt-36 flex flex-col md:flex-row gap-8">
+        <div className="flex-1 text-2xl leading-9 mt-10">
+          Hey, I'm full-stack developer based out of India. who spends her days fighting bugs and casting spells with code. When I'm not busy turning coffee into websites, you'll find me exploring the vast wilderness of tech (or at least my couch). Let's make magic happen—no wands required! 😆
+        </div>
+        <img src="/shruti-memoji.png" alt="shruti" className="w-full md:w-96" />
+      </div>
+      {/* about */}
+
       
     </div>
   );
