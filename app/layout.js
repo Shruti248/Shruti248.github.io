@@ -8,8 +8,8 @@ const muktaSans = Mukta({
 });
 
 export const metadata = {
-  title: "Shruti",
-  description: "Full Stack Developer",
+  title: "Shruti - Full Stack Engineer",
+  description: "Full Stack Engineer",
 };
 
 export default function RootLayout({ children }) {

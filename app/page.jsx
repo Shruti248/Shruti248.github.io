@@ -6,10 +6,10 @@ export default function Home() {
     <div className="container max-w-7xl mx-auto">
 
       {/* navbbar */}
-      <div className="flex items-center justify-between gap-2 mt-4">
+      <div className="flex items-center justify-between gap-2 mt-4 px-6">
         <img src="/logo.svg" alt="Shruti" className="w-32 block" />
 
-        <div className="flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-6">
           <a href="#home" className="block text-[#383838] font-artschool-skinny">home</a>
           <img src="/assets/star.svg" alt="star" className="w-5" />
           <a href="#work" className="block text-[#383838] font-artschool-skinny">work</a>
@@ -18,10 +18,13 @@ export default function Home() {
           <img src="/assets/star.svg" alt="star" className="w-5" />
           <a href="#resume" className="block text-[#383838] font-artschool-skinny">resume</a>
         </div>
+        <div className="text-2xl text-center md:hidden">
+          
+        </div>
 
-        <button className="w-32 flex items-center justify-center bg-[#FFB0B0] hover:bg-[#e58989] transition active:scale-95 text-white py-2 rounded-xl font-artschool text-xl">
+        <a href={`mailto:${mail}`} className="w-32 flex items-center justify-center bg-[#FFB0B0] hover:bg-[#e58989] transition active:scale-95 text-white py-2 rounded-xl font-artschool text-xl">
           Let's Talk
-        </button>
+        </a>
       </div>
       {/* navbbar */}
 
@@ -39,7 +42,7 @@ export default function Home() {
 
 
       {/* about */}
-      <div className="px-4 w-full md:w-[1024px] md:mx-auto mt-36 flex flex-col md:flex-row gap-8">
+      <div id="about" className="px-4 w-full md:w-[1024px] md:mx-auto mt-36 flex flex-col md:flex-row gap-8">
         <div className="flex-1 text-2xl leading-9 mt-10">
           Hey, I'm full-stack developer based out of India. who spends her days fighting bugs and casting spells with code. When I'm not busy turning coffee into websites, you'll find me exploring the vast wilderness of tech (or at least my couch). Let's make magic happen—no wands required! 😆
         </div>
@@ -73,7 +76,7 @@ export default function Home() {
       </p>
 
 
-      <div className="px-4 w-full md:w-[1024px] md:mx-auto mt-60 text-2xl">
+      <div id="work" className="px-4 w-full md:w-[1024px] md:mx-auto mt-60 text-2xl">
         <img src="/restropro.png" alt="RestroPRO" className="w-full" />
       </div>
 
@@ -85,7 +88,7 @@ export default function Home() {
 
       <img src="/assets/line.svg" alt="lines" className="my-40 mx-auto" />
 
-      <p className="text-center text-4xl font-artschool">
+      <p className="text-center text-4xl font-artschool" id="resume">
         Let's Connect
       </p>
 
@@ -114,12 +117,12 @@ export default function Home() {
       </div>
 
       {/* footer */}
-      <div className="flex items-center justify-between gap-2 mt-40 py-20">
-        <img src="/sign.png" alt="Shruti" className="h-20 block" />
+      <div className="flex items-center justify-between gap-2 mt-40 py-20 px-6">
+        <img src="/sign.png" alt="Shruti" className="h-12 md:h-20 block" />
 
         <p>© {new Date().getFullYear().toString()}, All rights reserved</p>
 
-        <img src="/cat2.png" alt="Shruti" className="w-20 block" />
+        <img src="/cat2.png" alt="Shruti" className="w-12 md:w-20 block" />
         
       </div>
       {/* footer */}
