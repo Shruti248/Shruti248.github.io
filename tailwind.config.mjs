@@ -11,6 +11,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        artschool: ['ARTSCHOOL', 'sans-serif'],
+        'artschool-skinny': ['ARTSCHOOL-Skinny', 'sans-serif'],
+      }
     },
   },
   plugins: [],

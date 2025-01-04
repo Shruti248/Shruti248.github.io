@@ -3,19 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-color: #FAFAFA;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* styles/globals.css */
+@font-face {
+  font-family: 'ARTSCHOOL';
+  src: url('/assets/fonts/ARTSCHOOLDROPOUT-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'ARTSCHOOL-Skinny';
+  src: url('/assets/fonts/ARTSCHOOLDROPOUT-Skinny.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Add Tailwind imports after your custom fonts */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: var(--bg-color);
   font-family: Arial, Helvetica, sans-serif;
 }
