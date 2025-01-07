@@ -8,8 +8,11 @@ const muktaSans = Mukta({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://shruti248.github.io'),
   title: "Shruti - Full Stack Engineer",
   description: "Full Stack Engineer",
+  keywords: "Shruti, Full Stack Engineer",
+  author: "Shruti"
 };
 
 export default function RootLayout({ children }) {
